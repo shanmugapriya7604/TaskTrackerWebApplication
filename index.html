@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="taskManager">
+    <header class="card">
+      <a href="welcome.html" class="back-button"><b>Back</b></a>
+
+      <h1>Welcome To Task Tracker ✅</h1>
+      <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter task..." required>
+        <input type="date" id="dueDateInput" required> <!-- Due date input -->
+
+        <button type="submit">Add Task</button>
+      </form>
+    </header>
+
+    <!-- Progress Bar -->
+    <div id="progressContainer">
+      <div id="progressBar"></div>
+      <p id="taskStats" class="progress-box">0/0 tasks completed</p>
+    </div>
+
+    <section id="taskContainer"></section>
+  </section>
+
+  <div class="confirm">
+    <h1>Confirm your action</h1>
+    <p>Are you <strong>really</strong> sure that you want to delete this task?</p>
+    <button class="cancel">Cancel</button>
+    <button autofocus class="confirmed">Confirm</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
